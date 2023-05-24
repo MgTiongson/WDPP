@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BLOG</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="main.html"><img src="images/logo.png" alt="" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-cloud" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="main.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="games.html">GAMES</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="Info.html">SURVEY</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Blog</h1>
+    </section>
+
+    <!-----------blog--------->
+
+    <section class="blog-content">
+      <div class="row">
+        <div class="blog-left">
+          <img src="images/laptop1.jpg" alt="" />
+          <h2>Asus ROG Zephyrus G14 (2022)</h2>
+          <p>
+            The new version of the Zephyrus G14 for 2022 impresses us once again
+            with its well-balanced spec and excellent gaming performance.
+            Seriously, this thing shreds through frames up to its 120Hz refresh
+            rate, and it's great for much more than gaming, too.
+          </p>
+          <p>
+            We checked out the version with AMD's RX 6800S under the hood,
+            though there is an option for an RX 6700S, for a chunk less cash.
+            Arguably, that cheaper option sounds a bit better to us, as the
+            high-end one can get a little pricey and close in on the expensive
+            but excellent Razer Blade 14. It's not helped much by its 32GB of
+            DDR5-4800 RAM in that regard, though we do love having all that
+            speedy memory raring to go for whatever you can throw at it.
+          </p>
+
+          <div class="comment-box">
+            <h3>Leave a comment</h3>
+
+            <form class="comment-form">
+              <input type="text" placeholder="Enter Name" />
+              <input type="email" placeholder="Enter Email" />
+              <textarea rows="5" placeholder="Your Comment"></textarea>
+              <button type="submit" class="hero-btn red-btn">
+                Post Comment
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="blog-right">
+          <h3>Best laptop for gaming (in my opinion)</h3>
+          <div>
+            <span>CPU:</span>
+            <span> AMD Ryzen 9 6900HS</span>
+          </div>
+          <div>
+            <span>GPU:</span>
+            <span>Up to AMD Radeon RX 6800S</span>
+          </div>
+          <div>
+            <span>RAM:</span>
+            <span>Up to 32GB DDR5-4800</span>
+          </div>
+          <div>
+            <span>Screen:</span>
+            <span>14-inch IPS 1600p @ 120Hz</span>
+          </div>
+          <div>
+            <span>Storage:</span>
+            <span>1TB SSD NVMe PCIe 4.0</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---footer---->
+
+    <section class="footer">
+      <h4>About Me</h4>
+      <p>Web Design Principles</p>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+      </div>
+      <p>| Miguel Andrei Tiongson |</p>
+    </section>
+
+    <!---------Javascript for toggle menu------------>
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
